@@ -1,0 +1,228 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+    font-size: 34px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.kishor {
+    width: 50%;
+}
+
+.kishor h1 {
+    font-size: 36px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.active2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.active2 input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.active2 button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.active2 button:hover {
+    background-color: #0056b3;
+}
+
+.bhanu img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.yup1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.yup2, .yup3 {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.min {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.min2 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.min3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.yup4 {
+    background-color: #fff;
+    padding: 50px 0;
+    font-size: 34px;
+   
+}
+
+.bestu4 {
+    text-align: left;
+    font-size: 24px ;
+}
+
+.bot {
+    margin-bottom: 10px;
+}
+
+.features {
+    background-color: #007bff;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.features h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.features p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .kishor {
+        width: 100%;
+    }
+
+    .yup1 {
+        flex-direction: column;
+    }
+
+    .yup2, .yup3 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .best3, .best2 {
+        text-align: center;
+    }
+}
+
+/* Hover effects */
+.button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.active2 button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.navbar li:hover {
+    transform: translateY(-3px);
+}
+
+.footer-links li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}

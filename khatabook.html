@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KhataBook</title>
+    <link rel="stylesheet" href="bulll.css">
+</head>
+<body>
+    <header>
+        <div class="logo">KhataBook</div>
+        <nav>
+            <ul>
+                <li><a href="khatabookloginpage.html">LOGIN</a></li>
+                <li><a href="create khata.html">CREATE ACCOUNT</a></li>
+                <li><a href="#">HELP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="logo">
+            <img src="khata6.jpg.png" alt="">
+        </div>
+        <div class="hero">
+            <div class="kishor">
+                <h1>Business hua aur bhi easy <br> with Khatabook on Desktop</h1>
+                <div class="button">
+                    <div class="active2">
+                        <p>+91</p>
+                        <input type="text" placeholder="Enter your phone number" required>
+                        <button class="active3"><a href="otpkhatabook.html">Get started</a></button>
+                    </div>
+                </div>
+                <div class="bill">
+                    <h2>Billing & Accounting for all businesses</h2>
+                    <div class="text">
+                        <ul>
+                            <li class="bot">Sales and purchase accounting</li>
+                            <li class="bot">GST/Non-GST bill creation</li>
+                            <li class="bot">Management with profit tracking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bhanu">
+                <img src="sardar3jpg.png" alt=""> 
+            </div>
+        </div>
+    </div>
+
+    <div class="yup1">
+        <div class="yup3">
+            <p>Already use Tally?</p>
+            <p>Get Tally * on mobile with BizAnalyst</p>
+        </div>
+        <div class="yup2">
+            <p>3 Cr+ Businesses using our free apps</p>
+            <p>Access your account anywhere, anytime</p>
+        </div>
+    </div>
+
+    <div class="min">
+        <p class="min2">Built with features for</p>
+        <p class="min3">growing businesses</p>
+    </div>
+
+    <div class="yup4">
+        <h3>Built with features for</h3>
+        <ul class="bestu4">
+            <li class="bot">GST & Non-GST Bills</li>
+            <li class="bot">Create customised invoices & easily share with customers</li>
+            <li class="bot">Custom fields like Vehicle No, PO No etc.</li>
+            <li class="bot">Detailed sales and purchase reports</li>
+            <li class="bot">No double-entry across khata and cashbook</li>
+        </ul>
+    </div>
+
+    <section class="features">
+        <h3>KhataBook</h3>
+        <p>Khatabook is India’s largest business management platform.</p>
+        <ul class="tru">
+            <li>Lending Partner</li>
+            <li>We'd love to hear from you!</li>
+            <li>You can reach out to us at:</li>
+            <li>+91-9606800800</li>
+            <li>feedback@khatabook.com</li>
+            <li>1203, 22nd Cross Rd, Sector 3, HSR Layout, Bengaluru, Karnataka 560102</li>
+        </ul>
+        <ul class="tru2">
+            <li id="company">Company</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>Newsroom</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KhataBook Clone</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Form submission
+    const form = document.querySelector('form');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const phoneNumberInput = document.querySelector('input[type="text"]');
+            const phoneNumber = phoneNumberInput.value.trim();
+
+            // Validate phone number
+            if (!validatePhoneNumber(phoneNumber)) {
+                alert('Please enter a valid phone number.');
+                return;
+            }
+
+            // Simulate form submission via AJAX
+            const formData = new FormData();
+            formData.append('phoneNumber', phoneNumber);
+
+            // Simulate AJAX request (replace with actual AJAX request)
+            setTimeout(() => {
+                const success = Math.random() < 0.8; // Simulate 80% success rate
+                if (success) {
+                    alert('Form submitted successfully!'); // Display success message
+                    form.reset(); // Reset form
+                } else {
+                    alert('Failed to submit form. Please try again later.'); // Display error message
+                }
+            }, 1000); // Simulate 1 second delay
+        });
+    }
+
+    // Function to validate phone number
+    function validatePhoneNumber(phoneNumber) {
+        // Simple validation: Check if the phone number consists of 10 digits
+        return /^\d{10}$/.test(phoneNumber);
+    }
+});
+
+    </script>
+</body>
+</html>
